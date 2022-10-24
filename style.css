@@ -1,4 +1,776 @@
 h1 {
-    color: aqua;
-    background-color: blueviolet;
+    margin-left: 50px;
+}
+.bord  {
+    border: 1px dashed black;
+    width: 700px;
+    height: 170px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+
+div h2 {
+    color: #000;
+}
+
+div {
+    border: 1px solid red;
+    width: 200px;
+    height: 80px;
+    color: red;
+}
+
+.task1 {
+    transition-duration: 2s;
+    transition-property: background-color;
+}
+.task1:hover {
+    background-color: red;
+}
+
+.task2 {
+    transition-duration: 2s;
+    transition-property: background-color color;
+}
+.task2:hover {
+    background-color: red;
+    color: white;
+}
+
+.task3 {
+    transition-duration: 2s;
+    transition-property: width;
+}
+.task3:hover {
+    width: 650px;
+}
+
+.task4 {
+    transition-duration: 2s;
+    transition-property: width font-size;
+}
+.task4:hover {
+    width: 650px;
+    font-size: 30px;
+}
+
+.task5 {
+    transition-duration: 2s;
+    transition-property: width margin-left;
+}
+.task5:hover {
+    width: 400px;
+    margin-left: 100px;
+}
+
+.task6 {
+    background-color: white;
+    border: 1px solid red;
+    color: #000;
+    width: 30%;
+    height: 50px;
+
+    text-indent: 2000px;
+    line-height: 50px;
+    text-align: center;
+
+    white-space: nowrap;
+
+    transition-duration: 3s;
+}
+.task6:hover {
+    color: #000;
+    text-indent: 0px;
+}
+
+
+.task7 {
+    transition-duration: 3s;
+    transition-property: width;
+    transition-delay: 3s;
+}
+.task7:hover {
+    width: 650px;
+}
+
+/*.task8 {
+    width: 220px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    
+    
+}*/
+#fio-field {
+    /*border: none;*/
+    height: 50px;
+    padding: 15px;    
+    width: 220px;
+    box-sizing: border-box;
+    transition-property: width box-shadow;
+    transition-duration: 2s;
+    border: 2px solid black;
+}
+#fio-field:focus {
+    width: 320px;
+    box-shadow: 0px 0px 3px 2px rgb(31, 31, 149);
+    
+}
+
+.bord2 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 470px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task9 {
+    border: 1px solid green;
+    width: 640px;
+    height: 370px;
+}
+.task9 div {
+    width: 200px;
+    height: 30px;
+    margin: 35px;
+    transition-duration: 1s;
+    transition-property: width;
+}
+.task9:hover>div {
+    width: 530px;
+}
+
+
+.task10 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 630px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}  
+.task10 div {
+    width: 200px;
+    height: 30px;
+    margin: 35px;
+    transition-duration: 1.5s;
+    transition-property: width;
+}
+.task10 div:hover+div {
+    width: 500px;
+}
+
+.task11 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 630px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task11 div {
+    width: 200px;
+    height: 30px;
+    margin: 35px;
+    transition-duration: 1.5s;
+    transition-property: width;
+}
+.task11 div:hover~div {
+    width: 500px;
+}
+
+.task12 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 630px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task12 div {
+    width: 200px;
+    height: 30px;
+    margin: 35px;
+    transition-duration: 1.5s;
+    transition-property: width;
+}
+.task12 div:hover + div + div {
+    width: 500px;
+}
+
+.task13 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 230px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task13 .text {
+    width: 550px;
+    height:35px;
+    margin: 35px;
+    padding-left: 20px;
+    padding-top: 10px;    
+    color: #000;
+    /**/
+}
+.task13 .podskazka {
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: -500px;
+    transition-duration: 1.5s;
+    transition-property: margin-left;
+}
+.text:hover + .podskazka {
+    margin-left: 200px;
+}
+
+.task14 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 250px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+#task14_go {
+    border: none;    
+    margin: 35px;
+    padding: 0;
+    width: 600px;
+    height: 135px;
+}
+#task14_go div {
+    width: 200px;
+    height: 50px;
+    margin: 0px;
+}
+#task14_go div:first-of-type {
+    margin-bottom: 35px;
+    transition-duration: 3s;
+    transition-property: width;
+    transition-timing-function: steps(5, start);
+}
+#task14_go div:last-of-type {
+    transition-duration: 3s;
+    transition-property: width;
+    transition-timing-function: steps(5, end);
+}
+#task14_go:hover>div {
+    width: 580px;
+}
+
+.task15 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 170px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task15 div {
+    width: 200px;
+    height: 50px;
+    margin: 35px;
+    transition-duration: 2s;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+}
+.task15 div:hover {
+    width: 580px;
+}
+
+.task16 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 170px;
+    padding-left: 30px;    
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task16 div {
+    width: 450px;
+    height: 40px;
+    margin: 35px auto;    
+    padding: 0;
+    box-sizing: border-box;    
+}
+.task16 div div {
+    width: 0px;
+    height: 40px;
+    margin: -1px;
+    background-color: red;
+    border: none;
+    transition-duration: 2.5s;
+    transition-property: width;
+    transition-timing-function: linear;
+}
+.task16 div:hover > div {
+    width: 450px;
+}
+
+.task17 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 170px;
+    padding-left: 30px;    
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task17 div {
+    width: 450px;
+    height: 40px;
+    margin: 35px auto;    
+    padding: 0;
+    box-sizing: border-box;    
+}
+.task17 div div {
+    width: 0px;
+    height: 40px;
+    margin: -1px;
+    background-color: red;
+    border: none;
+    transition-duration: 2.5s;
+    transition-property: width;
+    transition-timing-function: steps(5, start);
+}
+.task17 div:hover > div {
+    width: 450px;
+}
+
+.task18 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 530px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+.task18 .cont_white {
+    width: 150px;
+    height: 50px;
+    margin-top: 160px;
+    margin-left: 250px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+.task18 .cont_black1 {
+    width: 150px;
+    height:50px;
+    background-color: #000;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 350px;
+    transition-duration: 1.5s;
+    transition-property: margin-top;
+}
+.task18 .cont_black2 {
+    width: 150px;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid black;
+    position: absolute;
+    /*margin-top: 300px;*/
+    margin-top: 250px;
+    margin-left: 150px;
+    transition-duration: 1.5s;
+    transition-property: margin-left;
+}
+.task18 .cont_white:hover + div {    
+    margin-top: 250px;
+}
+.task18 .cont_white:hover + div + div {
+    margin-left: 350px;    
+}   
+
+/*Задания на анимацию*/
+ 
+.task2_1 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 150px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move1 {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 500px;
+    }
+}
+#cubik1 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move1;
+    animation-duration: 3.5s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
+
+.task2_2 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 150px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move2 {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 500px;
+    }
+}
+#cubik2 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move2;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.task2_3 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 250px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move3 {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: red;
+    }        
+}
+#cubik3 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    animation-name: move3;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.task2_4 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 280px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move4 {
+    0% {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    25% {
+        margin-left: 300px;
+        margin-top: 0;        
+    }
+    50% {
+        margin-top: 150px;
+        margin-left: 300px;
+    }
+    75% {
+        margin-left: 0;
+        margin-top: 150px;
+    }
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+#cubik4 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move4;
+    animation-duration: 3.5s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
+
+.task2_5 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 280px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move5 {
+    0% {
+        margin-left: 0px;
+        margin-top: 0px;
+        background-color: white;
+    }
+    12% {
+        background-color: red;
+    }
+    25% {
+        margin-left: 300px;
+        margin-top: 0;   
+        background-color: white;     
+    }
+    37% {
+        background-color: red;
+    }
+    50% {
+        margin-top: 150px;
+        margin-left: 300px;
+        background-color: white;
+    }
+    62% {
+        background-color: red;
+    }
+    75% {
+        margin-left: 0;
+        margin-top: 150px;
+        background-color: white;
+    }
+    87% {
+        background-color: red;
+    }
+    100% {
+        margin-top: 0;
+        margin-left: 0;
+        background-color: white;
+    }
+}
+#cubik5 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move5;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.task2_6 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 150px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move6 {
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 500px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+#cubik6 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.task2_7 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 150px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move7 {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 500px;
+    }    
+}
+#cubik7 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+.task2_8 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 170px;
+    padding-left: 30px;    
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task2_8 div {
+    width: 450px;
+    height: 40px;
+    margin: 35px auto;    
+    padding: 0;
+    box-sizing: border-box;    
+}
+@keyframes move8 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 450px;
+    }    
+}
+.task2_8 div div {
+    width: 0px;
+    height: 40px;
+    margin: -1px;
+    background-color: red;
+    border: none;
+    animation-name: move8;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.task2_9 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 170px;
+    padding-left: 30px;    
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+.task2_9 div {
+    width: 450px;
+    height: 40px;
+    margin: 35px auto;    
+    padding: 0;
+    box-sizing: border-box;    
+}
+@keyframes move9 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 450px;
+    }    
+}
+.task2_9 div div {
+    width: 0px;
+    height: 40px;
+    margin: -1px;
+    background-color: red;
+    border: none;
+    animation-name: move9;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.task2_10 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 150px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move10 {
+    from {
+        width: 70px;
+    }
+    to {
+        width: 580px;
+    }    
+}
+#cubik10 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation-name: move10;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+#cubik10:hover {
+    animation-play-state: running;
+}
+
+.task2_11 {
+    border: 1px dashed black;
+    width: 700px;
+    height: 250px;
+    padding-left: 30px;
+    margin: 20px 50px;
+    box-sizing: border-box;
+}
+@keyframes move11 {
+    from {
+        width: 70px;
+    }
+    to {
+        width: 580px;
+    }    
+}
+#cubik11 {
+    width: 200px;
+    height: 45px;
+    border: 1px solid red;
+    color: #000;
+    padding: 10px;
+    box-sizing: border-box;
+    /*animation-name: move11;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-play-state: paused;*/
+}
+#cubik11_blue {
+    width: 50px;
+    height: 60px;
+    border: 1px solid blue;
+    margin-top: 30px;
+    animation-name: move11;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+#cubik11:hover + div {
+    animation-play-state: running;
 }
